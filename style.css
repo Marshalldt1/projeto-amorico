@@ -1,0 +1,353 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* header - nav */
+a {
+  text-decoration: none;
+  color: #f98878;
+  text-shadow: 0.2px 0.2px 2px rgba(0, 0, 0, 0.196);
+  padding: 10px;
+}
+.ul1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.logo-marca {
+  background-image: url("img/amorico\ logo\ png.png");
+  height: 100px;
+  width: 240px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.nav-menu {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  font-weight: 400;
+  height: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.nav-menu li a {
+  display: block;
+}
+
+.nav-noact {
+  color: #735a50;
+}
+
+a:hover {
+  color: #f98878;
+  text-decoration: underline;
+}
+.nav-menu li:hover {
+  background-color: #8484841c;
+  color: #f0808f;
+}
+aside {
+  padding: 30px;
+}
+/* section - introduction*/
+.quemsomos {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 2.1em;
+  line-height: 1;
+  font-family: "Nunito", monospace;
+  font-weight: 600;
+  color: #69342e;
+  font-style: italic;
+}
+
+.sobre-h1 {
+  margin: 0 auto;
+  padding-top: 0px;
+  font-family: "outfit", sans-serif;
+  max-width: 1200px;
+  font-size: 2.1em;
+  color: #f0808f;
+}
+.h1first {
+  border-top: 2px solid #f98878;
+}
+.introduction {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Outfit";
+  font-weight: 300;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.sobre-info {
+  margin: 0 20px;
+}
+.sobre-img {
+  padding: 10px;
+}
+.sobre-h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f0808f;
+}
+.sobre-info p {
+  font-size: 1.3em;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  text-indent: 30px;
+  text-align: justify;
+  max-width: 400px;
+}
+
+.cake1 {
+  float: right;
+  opacity: 0.2;
+}
+/* Catalogo e fotos*/
+
+.section-valores {
+  background-color: rgb(255, 225, 225);
+}
+
+.catalogo-valores {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+.catalogo-valores div {
+  flex: 2 1 200px;
+  margin: 1px;
+}
+.catalogo-valores div img {
+  width: 300px;
+  height: 400px;
+}
+
+/* Galeria */
+.galeria-title {
+  font-family: "Outfit";
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  color: #f0808f;
+}
+.galeria h3 {
+  font-weight: 400;
+  margin: 10px;
+  text-align: center;
+  color: gray;
+}
+.lista-img {
+  cursor: pointer;
+}
+
+.container-galeria {
+  margin-top: 50px;
+  overflow-x: auto;
+}
+.galeria {
+  max-width: 1500px;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: hidden;
+}
+.galeria ul {
+  margin: 20px;
+  display: flex;
+  overflow: scroll;
+}
+.galeria ul li img {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+}
+
+/* google map e redes sociais*/
+.redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+}
+.contato {
+  margin: 0 auto;
+  width: 100%px;
+}
+.contatos {
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: "outfit", sans-serif;
+  max-width: 1200px;
+  font-size: 2.1em;
+  color: #f0808f;
+}
+.local {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  background-color: #69342e;
+}
+.footer-text {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 100px;
+  font-style: italic;
+}
+@media (max-width: 1025px) {
+  .sobre-h1 {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .redes-h1 {
+    margin-left: 0px;
+  }
+  .galeria-title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 899px) {
+  .catalogo-valores div img {
+    width: 250px;
+    height: 360px;
+  }
+
+  iframe {
+    width: 560px;
+  }
+}
+@media (max-width: 641px) {
+  .catalogo-valores div img {
+    width: 230px;
+    height: 300px;
+  }
+  iframe {
+    width: 500px;
+  }
+}
+@media (max-width: 501px) {
+  .galeria ul li img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+  .catalogo-valores div {
+    flex-direction: column;
+    text-align: center;
+  }
+  a {
+    padding-right: 10px;
+  }
+  .catalogo-valores div img {
+    width: 300px;
+    height: 340px;
+  }
+  .nav-menu {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    width: 360px;
+    text-align: center;
+  }
+  .nav-menu ul li {
+    border: #f98878 1px solid;
+  }
+  .nav-menu ul li a {
+    margin-top: 10px;
+  }
+  .nav-menu ul li:hover {
+    background-color: rgba(128, 128, 128, 0.07);
+  }
+  .quemsomos {
+    margin-top: 110px;
+  }
+  .logo-marca {
+    margin-left: 50px;
+  }
+  .quemsomos {
+    font-size: 25px;
+  }
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .catalogo-valores {
+    padding-left: 1px;
+  }
+  .nav-menu ul {
+    width: 280px;
+  }
+  iframe {
+    width: 300px;
+  }
+  .sobre-img img {
+    width: 300px;
+  }
+  .redes {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .sobre-h1 {
+    padding-left: 10px;
+  }
+  .redes p {
+    padding-right: 10px;
+  }
+  .footer-text {
+    font-size: 16px;
+  }
+  .logo-marca {
+    margin: 0px;
+  }
+}
+
+/* javascript */
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+
+  transition: 0.4s;
+}
