@@ -67,16 +67,16 @@ aside {
 }
 /* section - introduction*/
 .quemsomos {
-  display: block;
+  border-top: #f0808f 2px solid;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
-  font-size: 2.1em;
-  line-height: 1;
+  padding-top: 10px;
+  font-size: 2em;
   font-family: "Nunito", monospace;
-  font-weight: 600;
+  font-weight: 700;
   color: #69342e;
   font-style: italic;
+  text-align: center;
 }
 
 .sobre-h1 {
@@ -94,8 +94,6 @@ aside {
   margin: 0 auto;
   max-width: 900px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   font-family: "Outfit";
   font-weight: 300;
   padding-bottom: 40px;
@@ -104,8 +102,20 @@ aside {
 .sobre-info {
   margin: 0 20px;
 }
+.all-imagens {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+.all-imagens img {
+  padding: 5px;
+}
 .sobre-img {
   padding: 10px;
+  display: block;
+}
+.sobre-img-hidden {
+  display: none;
 }
 .sobre-h1 {
   font-size: 2em;
@@ -126,9 +136,31 @@ aside {
   opacity: 0.2;
 }
 /* Catalogo e fotos*/
-
+.button-and-h1 {
+  display: flex;
+ justify-content: center;
+}
+.sobre-h1-2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f0808f;
+}
 .section-valores {
   background-color: rgb(255, 225, 225);
+}
+.button-catalogo{
+  color: pink;
+  font-size: 40px;
+  margin-left: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgba(11, 11, 13, 0.23);
+  border-radius:50%;
+  cursor: pointer;
+}
+div .button-catalogo:hover{
+  background-color: rgb(137, 137, 137);
 }
 
 .catalogo-valores {
@@ -139,7 +171,9 @@ aside {
   padding-left: 10px;
   padding-bottom: 30px;
 }
-
+.hidden-catalogo {
+  display: none
+}
 .catalogo-valores div {
   flex: 2 1 200px;
   margin: 1px;
@@ -197,8 +231,8 @@ aside {
   margin: 50px;
 }
 .contato {
-  margin: 0 auto;
   width: 100%px;
+  background-color: #9a9a9a24;
 }
 .contatos {
   margin: 0 auto;
@@ -210,11 +244,11 @@ aside {
 }
 .local {
   text-align: center;
+  padding-bottom: 50px;
 }
 
 /* Footer */
 footer {
-  margin-top: 100px;
   width: 100%;
   height: 200px;
   background-color: #69342e;
